@@ -1,0 +1,12 @@
+.navDesign{
+    color: white;
+    background-color: #EF620B;
+    margin: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.navDesign:hover{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}

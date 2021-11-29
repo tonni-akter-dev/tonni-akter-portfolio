@@ -1,6 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router";
-import {Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Projects.css";
 const Projects = () => {
   return (
@@ -30,10 +30,8 @@ const Projects = () => {
             Mern Stack
           </Link>
         </li>
-       
       </ul>
       <Outlet />
-
     </div>
   );
 };

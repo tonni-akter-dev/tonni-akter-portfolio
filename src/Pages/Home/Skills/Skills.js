@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Skills.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Skills = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
-    <div className="container-fluid pb-5 p-5">
+    <div className="container-fluid pb-5 p-5" data-aos="fade-up">
       <h3
         className="color"
         style={{
@@ -16,7 +21,9 @@ const Skills = () => {
       <div className="row">
         <div className="col-lg-6">
           <div className="d-flex justify-content-evenly">
-            <p style={{ paddingRight: "420px", paddingTop: "10px" }}>Html & CSS3</p>
+            <p style={{ paddingRight: "420px", paddingTop: "10px" }}>
+              Html & CSS3
+            </p>
             <span style={{ marginRight: "20px" }}>90%</span>
           </div>
           <div className="progress" style={{ height: "8px" }}>
@@ -29,9 +36,10 @@ const Skills = () => {
               aria-valuemax="100"
             ></div>
           </div>
-          
           <div className="d-flex justify-content-evenly">
-            <p style={{ paddingRight: "470px", paddingTop: "10px" }}>Bootstrap</p>
+            <p style={{ paddingRight: "470px", paddingTop: "10px" }}>
+              Bootstrap
+            </p>
             <span style={{ marginRight: "20px" }}>95%</span>
           </div>
           <div className="progress" style={{ height: "8px" }}>
@@ -45,7 +53,7 @@ const Skills = () => {
             ></div>
           </div>
           <div className="d-flex justify-content-evenly mt-3">
-            <p style={{ paddingRight: "500px" }}>      Tailwind</p>
+            <p style={{ paddingRight: "500px" }}> Tailwind</p>
             <span>70%</span>
           </div>{" "}
           <div className="progress " style={{ height: "8px" }}>
@@ -73,7 +81,7 @@ const Skills = () => {
             ></div>
           </div>
         </div>
-        <div className="col-lg-6">
+        <div className="col-lg-6" data-aos="fade-right">
           <div className="d-flex justify-content-evenly">
             <p style={{ paddingRight: "470px", paddingTop: "10px" }}>
               Javascript

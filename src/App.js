@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ContactForm from './Pages/Home/Contact/ContactForm'
 import Home from "./Pages/Home/Home/Home";
 import Projects from "./Pages/Projects/Projects";
 import AllProjects from "./Pages/AllProjects/AllProjects";
@@ -14,6 +15,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<ContactForm/>}></Route>
           <Route path="/home" element={<Home />} />
           <Route path="/projects" element={<Projects />}>
             <Route path="/projects/all" element={<AllProjects />}></Route>
@@ -21,6 +23,7 @@ function App() {
             <Route path="/projects/java" element={<JavaProjects />}></Route>
             <Route path="/projects/mernstack" element={<MernStack />}></Route>
             <Route path="/projects/fullstack" element={<FullStack />}></Route>
+         
           </Route>
         </Routes>
       </BrowserRouter>

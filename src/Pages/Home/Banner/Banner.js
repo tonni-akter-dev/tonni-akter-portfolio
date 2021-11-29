@@ -16,11 +16,17 @@ const Banner = () => {
     .pauseFor(1000)
     .start();
   return (
-    <div>
-      <div className="row pt-5 " >
-        <div className="col-lg-6">
+    <div className="banner">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+      <div className="row pt-5 ">
+        <div
+          className="col-lg-6 mt-5"
+          data-aos-anchor-placement="center-center"
+        >
           <div id="app" style={{ height: "160px" }}></div>
-          <button
+          <a
             className="btn rounded-pill"
             style={{
               backgroundColor: "#EF620B",
@@ -28,19 +34,17 @@ const Banner = () => {
               width: "220px",
               height: "55px",
             }}
+            href="https://drive.google.com/file/d/1HjnE8oNKunC7D6beAYn2IJprOHr5iSTc/view?usp=sharing"
+            download
+            rel="noopener noreferrer"
+            target="_blank"
           >
-            <a
-              style={{ textDecoration: "none", color: "white" }}
-              href="Tonni-Akter-Resume.pdf"
-              download="proposed_file_name"
-            >
-              Download Resume
-            </a>
-          </button>
+            Download File
+          </a>
         </div>
-        <div className="col-lg-6">
+        <div className="col-lg-6" data-aos="fade-left">
           <img
-          className="mb-3"
+            className="mb-3"
             style={{
               borderRadius: "70px",
               height: "350px",
@@ -52,7 +56,7 @@ const Banner = () => {
           />
         </div>
       </div>
-      <hr style={{color:"white",width:"800px",margin:"0 auto"}}/>
+      <hr style={{ color: "white", width: "800px", margin: "0 auto" }} />
     </div>
   );
 };

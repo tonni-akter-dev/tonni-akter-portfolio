@@ -4,7 +4,6 @@ import { useForm, ValidationError } from "@formspree/react";
 import NavBar from "../../NavBar/NavBar";
 function ContactForm() {
   const [state, handleSubmit] = useForm("mpzbalnn");
-
   return (
     <>
       <NavBar />
@@ -46,7 +45,7 @@ function ContactForm() {
               color: "white",
               width: "220px",
               height: "55px",
-              borderRadius:"10px"
+              borderRadius: "10px",
             }}
             type="submit"
             disabled={state.submitting}

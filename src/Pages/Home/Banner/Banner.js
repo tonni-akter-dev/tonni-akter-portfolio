@@ -1,20 +1,20 @@
 import React from "react";
 import "./Banner.css";
-import Typewriter from "typewriter-effect/dist/core";
+// import Typewriter from "typewriter-effect/dist/core";
 const Banner = () => {
-  var app = document.getElementById("app");
-  var typewriter = new Typewriter(app, {
-    loop: true,
-    delay: 75,
-  });
-  typewriter
-    .pauseFor(1000)
-    .typeString("<h2>Hi, I am <br/> Web Developer</h2>")
-    .pauseFor(300)
-    .deleteChars(13)
-    .typeString("<h2> MERN Stack Developer</h2>")
-    .pauseFor(1000)
-    .start();
+  // var app = document.getElementById("app");
+  // var typewriter = new Typewriter(app, {
+  //   loop: true,
+  //   delay: 75,
+  // });
+  // typewriter
+  //   .pauseFor(1000)
+  //   .typeString("<h2>Hi, I am <br/> Web Developer</h2>")
+  //   .pauseFor(300)
+  //   .deleteChars(13)
+  //   .typeString("<h2> MERN Stack Developer</h2>")
+  //   .pauseFor(1000)
+  //   .start();
   return (
     <div className="banner">
       <div id="stars"></div>
@@ -25,9 +25,22 @@ const Banner = () => {
           className="col-lg-6 mt-5"
           data-aos-anchor-placement="center-center"
         >
-          <div id="app" style={{ height: "160px" }}></div>
+          {/* <div id="app" style={{ height: "160px" }}></div> */}
+          <h4 class="wordCarousel">
+            <span class="wordCarousel1" style={{ marginRight: "-110px" }}>
+              Hi I Am a ,
+            </span>
+            <div>
+              <ul class="flip4">
+                <li>Web Developer</li>
+                <li>MERN Stack Developer</li>
+                <li>Graphics Designer</li>
+              </ul>
+            </div>
+          </h4>{" "}
+          <br />
           <a
-            className="btn rounded-pill"
+            className="ms-5 btn rounded-pill mb-5"
             style={{
               backgroundColor: "#EF620B",
               color: "white",
@@ -39,7 +52,7 @@ const Banner = () => {
             rel="noopener noreferrer"
             target="_blank"
           >
-            Download File
+            Download Resume
           </a>
         </div>
         <div className="col-lg-6" data-aos="fade-left">

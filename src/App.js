@@ -9,6 +9,8 @@ import ReactProjects from "./Pages/ReactProjects/ReactProjects";
 import JavaProjects from './Pages/JavaProjects/JavaProjects';
 import MernStack from './Pages/MernStack/MernStack';
 import FullStack from './Pages/FullStack/FullStack';
+import ProjectDetails from './Pages/ProjectDetails/ProjectDetails';
+import Blog from "./Pages/Blog/Blog";
 function App() {
   return (
     <div className="App" style={{ backgroundColor: "black", color: "white" }}>
@@ -17,13 +19,15 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<ContactForm/>}></Route>
           <Route path="/home" element={<Home />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="project/:id" element={<ProjectDetails />}/>
+          {/* nested router */}
           <Route path="/projects" element={<Projects />}>
             <Route path="/projects/all" element={<AllProjects />}></Route>
             <Route path="/projects/react" element={<ReactProjects />}></Route>
             <Route path="/projects/java" element={<JavaProjects />}></Route>
             <Route path="/projects/mernstack" element={<MernStack />}></Route>
             <Route path="/projects/fullstack" element={<FullStack />}></Route>
-         
           </Route>
         </Routes>
       </BrowserRouter>

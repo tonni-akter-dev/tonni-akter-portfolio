@@ -3,15 +3,15 @@ import "./Services.css";
 const Services = () => {
   return (
     <div>
-      <div>
+      <div  style={{marginTop:"200px"}}>
         <h4>MY SERVICES</h4>
       </div>
-      <div className=" py-5 service-1">
+      <div className="py-5 service-1">
         <div className="container">
           {/* <!-- Row  --> */}
           <div className="row">
             {/* <!-- Column --> */}
-            <div className="col-md-4 wrap-service1-box">
+            <div className="col-md-4 wrap-service1-box box2">
               <div className="card border-0 card-shadow mb-4">
                 <div className="card-body text-center">
                   <div className="my-3">

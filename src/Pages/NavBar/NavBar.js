@@ -36,11 +36,7 @@ const NavBar = () => {
                   <button class="button type1">About</button>
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link active" to="/service">
-                  <button class="button type1"> Services</button>
-                </Link>
-              </li>
+          
               <li className="nav-item">
                 <Link className="nav-link active" to="/blog">
                   <button class="button type1">Blog</button>

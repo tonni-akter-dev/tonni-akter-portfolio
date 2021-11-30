@@ -2,16 +2,16 @@ import React from "react";
 import "./Services.css";
 const Services = () => {
   return (
-    <div>
-      <div  style={{marginTop:"200px"}}>
+    <div className="banner">
+      <div  style={{paddingTop:"100px"}}>
         <h4>MY SERVICES</h4>
       </div>
       <div className="py-5 service-1">
         <div className="container">
           {/* <!-- Row  --> */}
-          <div className="row">
+          <div className="row" >
             {/* <!-- Column --> */}
-            <div className="col-md-4 wrap-service1-box box2">
+            <div className="col-md-4 wrap-service1-box box2"  data-aos="fade-right">
               <div className="card border-0 card-shadow mb-4">
                 <div className="card-body text-center">
                   <div className="my-3">
@@ -25,7 +25,7 @@ const Services = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-4 wrap-service1-box">
+            <div className="col-md-4 wrap-service1-box"  data-aos="fade-left">
               <div className="card border-0 card-shadow mb-4">
                 <div className="card-body text-center">
                   <div className="my-3">
@@ -40,7 +40,7 @@ const Services = () => {
               </div>
             </div>
 
-            <div className="col-md-4 wrap-service1-box">
+            <div className="col-md-4 wrap-service1-box"  data-aos="fade-right">
               <div className="card border-0 card-shadow mb-4">
                 <div className="card-body text-center">
                   <div className="my-3">
@@ -57,7 +57,7 @@ const Services = () => {
           </div>
           <div className="row">
             {/* <!-- Column --> */}
-            <div className="col-md-4 wrap-service1-box">
+            <div className="col-md-4 wrap-service1-box"  data-aos="fade-left">
               <div className="card border-0 card-shadow mb-4">
                 <div className="card-body text-center">
                   <div className="my-3">
@@ -72,7 +72,7 @@ const Services = () => {
               </div>
             </div>
 
-            <div className="col-md-4 wrap-service1-box">
+            <div className="col-md-4 wrap-service1-box"  data-aos="fade-right">
               <div className="card border-0 card-shadow mb-4">
                 <div className="card-body text-center">
                   <div className="my-3">
@@ -86,7 +86,7 @@ const Services = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-4 wrap-service1-box">
+            <div className="col-md-4 wrap-service1-box"  data-aos="fade-left">
               <div className="card border-0 card-shadow mb-4">
                 <div className="card-body text-center">
                   <div className="my-3">

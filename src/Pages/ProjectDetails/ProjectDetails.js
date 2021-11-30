@@ -101,21 +101,22 @@ const ProjectDetails = () => {
           </h2>
           <p style={{ textAlign: "left" }}>{projects.details}</p>
           <div className="d-flex ">
-            <div class="container1 me-5">
+            <div class="container1 me-3">
               <a href={projects.clientcode} target="_blank" class="btn1 a">
-                View Client Code
+                 Client Code
               </a>
             </div>{" "}
             <br />
-            {/* <div class="container1 me-5">
-              <a href={projects.clientcode} target="_blank" class="btn1 a">
-                View server Code
-              </a>
-            </div>{" "}
-            <br /> */}
+            {projects.servercode && (
+              <div class="container1 me-3">
+                <a href={projects.servercode} target="_blank" class="btn1 a">
+                   server Code
+                </a>
+              </div>
+            )} 
             <div class="container1">
               <a href={projects.livesite} target="_blank" class="btn1 a">
-                View Live Site
+                 Live Site
               </a>
             </div>
           </div>

@@ -1,30 +1,15 @@
 import React from "react";
-import "./About.css";
-const About = () => {
+// import About from "../Home/About/About";
+import NavBar from "../NavBar/NavBar";
+const About1 = () => {
   return (
-    <div className="banner container-fluid">
+    <div>
+      <NavBar />
+      <div className="banner container">
     <div className="icon">
       <div className="row pt-5 pb-3">
-        <div className="col-lg-1 col-sm-12 sidebar1">
-        <div class="sidebar">
-          <a
-            class="active"
-            href="https://www.facebook.com/siddikaa.prodhan"
-          >
-            <i class="fab fa-facebook"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/tonni-akter/">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://github.com/tonni-akter-dev">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/tonni-akter/">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </div>
-      </div>
-        <div className="col-lg-4">
+
+        <div className="col-lg-6">
           <img
             style={{ width: "350px" }}
             className=" pb-5"
@@ -71,7 +56,8 @@ const About = () => {
       {/* side nabv */}
     </div>
   </div>
+    </div>
   );
 };
 
-export default About;
+export default About1;

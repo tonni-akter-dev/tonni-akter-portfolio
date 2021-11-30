@@ -11,6 +11,8 @@ import MernStack from './Pages/MernStack/MernStack';
 import FullStack from './Pages/FullStack/FullStack';
 import ProjectDetails from './Pages/ProjectDetails/ProjectDetails';
 import Blog from "./Pages/Blog/Blog";
+import About1 from "./Pages/About1/About1";
+
 function App() {
   return (
     <div className="App" style={{ backgroundColor: "black", color: "white" }}>
@@ -20,6 +22,7 @@ function App() {
           <Route path="/contact" element={<ContactForm/>}></Route>
           <Route path="/home" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/about" element={<About1/>} />
           <Route path="project/:id" element={<ProjectDetails />}/>
           {/* nested router */}
           <Route path="/projects" element={<Projects />}>

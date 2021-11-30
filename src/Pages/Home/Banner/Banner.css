@@ -218,6 +218,11 @@ list-style: none;
     height:1.8em;
   }
   
+@media screen and (max-width: 450px) {
+ .heading{
+   margin-right: 70px !important;
+ }
+}
   .type span span {
     width:0%;
     max-width:max-content;

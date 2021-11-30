@@ -27,20 +27,20 @@ const Banner = () => {
         >
           {/* <div id="app" style={{ height: "160px" }}></div> */}
           <h4 class="wordCarousel">
-            <span class="wordCarousel1" style={{ marginRight: "-110px" }}>
+            <span class="wordCarousel1 heading" style={{ marginRight: "-110px" ,marginBottom:"10px"}}>
               Hi I Am a ,
             </span>
             <div>
               <ul class="flip4">
+                <li>Frontend Developer</li>
                 <li>Web Developer</li>
-                <li>MERN Stack Developer</li>
                 <li>Graphics Designer</li>
               </ul>
             </div>
           </h4>{" "}
           <br />
           <a
-            className="ms-5 btn rounded-pill mb-5"
+            className="ms-5 btn rounded-pill mt-5 mb-5"
             style={{
               backgroundColor: "#EF620B",
               color: "white",

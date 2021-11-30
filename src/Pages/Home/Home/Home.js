@@ -28,6 +28,7 @@ const Home = () => {
       <Banner />
       <About />
       {/* <!--projects--> */}
+      <div class="container-fluid banner">
       <div class="container">
         <h3
           style={{
@@ -41,7 +42,7 @@ const Home = () => {
         </h3>
         <div class="row">
           {projects.map((project) => (
-            <div class="col-sm-6 col-md-3">
+            <div class="col-sm-6 col-md-3 mb-5"  data-aos="fade-right">
               <div class="profile-card">
                 <div class="profile-img">
                   <img
@@ -74,6 +75,7 @@ const Home = () => {
             </div>
           ))}
         </div>
+      </div>
       </div>
       <Services />
       <Footer />

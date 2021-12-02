@@ -30,6 +30,11 @@
     padding-top: 5px;
   }
   
+  .sidebar1{
+    position: fixed;
+    top: 30%;
+  }
+
 
 @media screen and (max-width: 700px) {
     .sidebar {

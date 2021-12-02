@@ -1,14 +1,13 @@
 import React from "react";
-// import About from "../Home/About/About";
+
 import NavBar from "../NavBar/NavBar";
 const About1 = () => {
   return (
-    <div>
+    <>
       <NavBar />
       <div className="banner container">
     <div className="icon">
       <div className="row pt-5 pb-3">
-
         <div className="col-lg-6">
           <img
             style={{ width: "350px" }}
@@ -53,10 +52,15 @@ const About1 = () => {
           </div>
         </div>
       </div>
-      {/* side nabv */}
     </div>
   </div>
-    </div>
+
+
+
+
+
+
+    </>
   );
 };
 

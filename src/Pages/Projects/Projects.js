@@ -17,7 +17,7 @@ const Projects = () => {
         </li>
         <li className="nav-item">
           <Link className="nav-link navDesign" to="/projects/java">
-            Javascript
+            Web Design
           </Link>
         </li>
         <li className="nav-item">

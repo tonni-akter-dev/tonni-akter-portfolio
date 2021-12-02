@@ -1,10 +1,10 @@
 import React, { useState,useEffect } from 'react';
 import { Link } from "react-router-dom";
-const MernStack = () => {
+const WebDesign = () => {
     const [projects, setProjects] = useState([]);
     useEffect(() => {
       fetch(
-        "https://raw.githubusercontent.com/tonni-akter-dev/Api-hot-onion/main/mern.json"
+        "https://raw.githubusercontent.com/tonni-akter-dev/Api-hot-onion/main/webdesign.json"
       )
         .then((res) => res.json())
         .then((data) => setProjects(data));
@@ -65,4 +65,4 @@ const MernStack = () => {
     );
 };
 
-export default MernStack;
+export default WebDesign;

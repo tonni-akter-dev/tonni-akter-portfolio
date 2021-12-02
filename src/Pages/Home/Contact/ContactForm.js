@@ -11,7 +11,7 @@ function ContactForm() {
         <div style={{ paddingTop: "100px" }}>
           {" "}
           <h3 className="color">Contact Me</h3>
-          <p>Have a question or want to work together</p>
+          <p>Have a question or want to work together?</p>
         </div>
         <form
           method="POST"

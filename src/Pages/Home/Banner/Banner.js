@@ -27,27 +27,28 @@ const Banner = () => {
         >
           {/* <div id="app" style={{ height: "160px" }}></div> */}
           <h4 class="wordCarousel">
-            <span class="wordCarousel1 heading" style={{ marginRight: "-110px" ,marginBottom:"10px"}}>
+            <span
+              class="wordCarousel1 heading"
+              style={{ marginRight: "-230px", marginBottom: "10px" }}
+            >
               Hi I Am a ,
             </span>
             <div>
               <ul class="flip4">
-                <li>Frontend Developer</li>
-                <li>Web Developer</li>
                 <li>Graphics Designer</li>
+                <li>Web Developer</li>
               </ul>
             </div>
           </h4>{" "}
           <br />
           <a
-            className="ms-5 btn rounded-pill mt-5 mb-5"
+            className="btn rounded-pill"
             style={{
               backgroundColor: "#EF620B",
               color: "white",
               width: "220px",
-              height: "55px",
             }}
-            href="https://drive.google.com/file/d/1HjnE8oNKunC7D6beAYn2IJprOHr5iSTc/view?usp=sharing"
+            href="https://drive.google.com/file/d/1cYQERMgzBRU10WesUT9XCkrFGMD86i6e/view?fbclid=IwAR2n_CZxrBnJoG3WVDP9MwzVeOF2EBKxllnyPYtTtdSPKT9r5kshGUy70kM"
             download
             rel="noopener noreferrer"
             target="_blank"

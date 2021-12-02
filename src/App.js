@@ -6,12 +6,11 @@ import Home from "./Pages/Home/Home/Home";
 import Projects from "./Pages/Projects/Projects";
 import AllProjects from "./Pages/AllProjects/AllProjects";
 import ReactProjects from "./Pages/ReactProjects/ReactProjects";
-import JavaProjects from './Pages/JavaProjects/JavaProjects';
 import MernStack from './Pages/MernStack/MernStack';
-import FullStack from './Pages/FullStack/FullStack';
 import ProjectDetails from './Pages/ProjectDetails/ProjectDetails';
 import Blog from "./Pages/Blog/Blog";
 import About1 from "./Pages/About1/About1";
+import WebDesign from "./Pages/WebDesign/WebDesign";
 
 function App() {
   return (
@@ -26,11 +25,12 @@ function App() {
           <Route path="project/:id" element={<ProjectDetails />}/>
           {/* nested router */}
           <Route path="/projects" element={<Projects />}>
+            <Route path="/projects" element={<AllProjects/>} />
             <Route path="/projects/all" element={<AllProjects />}></Route>
             <Route path="/projects/react" element={<ReactProjects />}></Route>
-            <Route path="/projects/java" element={<JavaProjects />}></Route>
+            <Route path="/projects/java" element={<WebDesign />}></Route>
             <Route path="/projects/mernstack" element={<MernStack />}></Route>
-            <Route path="/projects/fullstack" element={<FullStack />}></Route>
+        
           </Route>
         </Routes>
       </BrowserRouter>

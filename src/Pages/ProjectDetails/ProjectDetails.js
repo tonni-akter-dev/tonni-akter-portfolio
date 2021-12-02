@@ -7,7 +7,7 @@ const ProjectDetails = () => {
   const [projects, setProjects] = useState({});
   useEffect(() => {
     fetch(
-      `https://raw.githubusercontent.com/tonni-akter-dev/Api-hot-onion/main/projectsData.json`
+      `https://raw.githubusercontent.com/tonni-akter-dev/Api-hot-onion/main/allData.json`
     )
       .then((res) => res.json())
       .then((data) => {

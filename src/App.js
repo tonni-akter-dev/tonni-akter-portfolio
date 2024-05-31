@@ -18,19 +18,19 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<ContactForm/>}></Route>
+          <Route path="/contact" element={<ContactForm />}></Route>
           <Route path="/home" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/about" element={<About1/>} />
-          <Route path="project/:id" element={<ProjectDetails />}/>
+          <Route path="/about" element={<About1 />} />
+          <Route path="project/:id" element={<ProjectDetails />} />
           {/* nested router */}
           <Route path="/projects" element={<Projects />}>
-            <Route path="/projects" element={<AllProjects/>} />
+            <Route path="/projects" element={<AllProjects />} />
             <Route path="/projects/all" element={<AllProjects />}></Route>
             <Route path="/projects/react" element={<ReactProjects />}></Route>
             <Route path="/projects/java" element={<WebDesign />}></Route>
             <Route path="/projects/mernstack" element={<MernStack />}></Route>
-        
+
           </Route>
         </Routes>
       </BrowserRouter>
